@@ -204,12 +204,22 @@ body {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .my-col {
-        flex: 1 1 100%;
+@media only screen and (min-width: 600px) {
+    .item {
+        width: 48%; /* Two items side by side */
     }
 }
 
+/* Desktop and larger screens (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+    .container {
+        justify-content: space-between;
+    }
+
+    .item {
+        width: 30%; /* Three items side by side */
+    }
+}
 
 
 
